@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment gateway</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+   .wrapper{
+	background: url(index.jpg) no-repeat;
+	background-size: cover;
+	height: 100vh;
+    
+    }
+    .navbar{
+        position: fixed;
+        height: 60px;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0,0.4);
+        opacity: 0.89;
+    }
+    .navbar .logo{
+        width: 65px;
+        height: auto;
+        padding: 11px 38px;
+}
+    .navbar ul{
+         float: right;
+        margin: 20px;
+   }
+   .navbar li{
+       list-style: none;
+       margin: 0 8px;
+       display: inline-block;
+       line-height: 20px;
+   }
+   .navbar li a{
+       text-decoration: none;
+       padding: 4px 6px;
+       color: white;
+       font-size: 15px;
+       transition: .4s;
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   }
+   .navbar ul li a.active,
+   .navbar ul li a:hover{
+      background-color: red;
+      border-radius: 2px;
+   }
+   #footer{
+    
+    display: flex;
+    background:black;
+    color: white;
+    flex-wrap: wrap;
+    justify-content: center;
+    opacity: 0.89;
+    text-align: center;
+    font-size: 10px;
+    opacity: 0.89;
+    
+}
+footer p{
+    font-weight: 300;
+    margin: 3px;
+}
+.wrapper .center{
+	position: absolute;
+	left: 0;
+    top:50%;
+	font-family: sans-serif;
+	user-select: none;
+}
+.center h1{
+	color: black;
+	font-size: 35px;
+	font-family:"sans-serif";
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align:left;
+    letter-spacing: 1px;
+   
+}
+.center .buttons{
+	margin: 7px 11px;
+	font-family:"sans-serif";
+} 
+.buttons button{
+	height: 50px;
+	width: 130px;
+	font-size: 20px;
+	font-weight: 600;
+	color: #ffb3b3;
+	background: red;
+	outline: none;
+	cursor: pointer;
+	border: 1px solid #cc0000;
+	border-radius: 5px;
+	transition: .4s;
+}
+.buttons .btn2{
+	margin-left: 25px;
+}
+.buttons button:hover{
+	background: #cc0000;
+}
+   
+</style>
+<body>
+    <div class="wrapper">
+        <nav class="navbar">
+            <img class="logo" src="img.jpg" href="index.html">
+            <ul>
+                <li><a class="active"href="index.html">HOME</a></li>
+                <li><a href="donate.html">DONATE</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+        <div class="center">
+			<h1>Giving is not just about making a donation,<br> it is about making a difference.</h1>
+			<div class="buttons">
+			<button onclick="window.location.href='about.html'">ABOUT US</button>
+			<button class="btn2" onclick="window.location.href='donate.html'">DONATE US</button>
+		</div>
+		</div>
+    </div>
+   <section id="footer">
+       <footer>
+      <p>&copy 2021. Made by <b>Kaushik Baruah</b> <br> KAUSHIK FOUNDATION</p>
+      </footer>
+   </section>
+   
+</body>
+</html>
